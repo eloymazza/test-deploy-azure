@@ -4,9 +4,9 @@ exports.DB = exports.DB_URI = exports.API_PREFIX_PATH = exports.APP_PREFIX_PATH 
 exports.ENVIRONMENT = process.env.APP_ENV || 'dev';
 exports.IS_PRODUCTION = exports.ENVIRONMENT === 'production';
 exports.IS_TEST = exports.ENVIRONMENT === 'test';
-exports.PORT = Number(process.env.APP_PORT) || 8000;
+exports.PORT = Number(process.env.PORT) || 8080;
 exports.APP_PREFIX_PATH = process.env.APP_PREFIX_PATH || '/';
-exports.API_PREFIX_PATH = process.env.APP_PREFIX_PATH || '/api';
+exports.API_PREFIX_PATH = process.env.API_PREFIX_PATH || '/api';
 exports.DB_URI = process.env.DB_URI || 'mongodb://localhost:27017/marathon-dev';
 exports.DB = {
     USER: process.env.DB_USER,

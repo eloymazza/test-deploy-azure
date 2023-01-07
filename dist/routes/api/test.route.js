@@ -15,6 +15,6 @@ router.get('/', (req, res, next) => __awaiter(void 0, void 0, void 0, function* 
     // const docs = await Test.find({});
     // console.log(docs);
     console.log('hola');
-    // res.send(JSON.stringify(docs));
+    res.send(JSON.stringify({ hola: 'mundo' }));
 }));
 exports.default = router;
