@@ -7,7 +7,7 @@ router.get('/', async (req, res, next) => {
   // const docs = await Test.find({});
   // console.log(docs);
   console.log('hola');
-  // res.send(JSON.stringify(docs));
+  res.send(JSON.stringify({ hola: 'mundo' }));
 });
 
 export default router;
